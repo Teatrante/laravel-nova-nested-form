@@ -1,5 +1,5 @@
 {
-    "name": "yassi/nova-nested-form",
+    "name": "wdgt/nova-nested-form",
     "description": "A Laravel Nova package that allows you to create/update/delete nested related fields from a parent form.",
     "keywords": [
         "laravel",
