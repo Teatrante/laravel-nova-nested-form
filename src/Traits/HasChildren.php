@@ -21,8 +21,19 @@ trait HasChildren
      */
     public function setChildren(Model $resource)
     {
+        //se la risorsa è ordinabile prendo le risorse ordinate per la colonna d'ordine
+        $relatedClassName = get_class($resource->{$this->viaRelationship}()->getRelated());
+        $relatedClassInstance = new $relatedClassName;
+        $sortable_column = $relatedClassInstance->sortable['order_column_name'] ?? null;
+
+        if($sortable_column != null) 
+            $children = $resource->{$this->viaRelationship}()->orderBy($sortable_column)->get();
+        else 
+            $children = $resource->{$this->viaRelationship}()->get();
+        
+
         return $this->withMeta([
-            'children' => $resource->{$this->viaRelationship}()->get()->map(function ($item, $index) {
+            'children' => $children->map(function ($item, $index) {
                 return [
                     'fields' => $this->getFields('showOnUpdate', $item, $index),
                     'heading' => $this->getHeading(),
@@ -32,5 +43,6 @@ trait HasChildren
                 ];
             }),
         ]);
+        
     }
 }
