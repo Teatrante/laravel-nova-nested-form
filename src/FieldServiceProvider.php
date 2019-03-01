@@ -1,6 +1,6 @@
 <?php
 
-namespace Yassi\NestedForm;
+namespace Wdgt\NestedForm;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

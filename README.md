@@ -1,10 +1,10 @@
 
-[![Latest Stable Version](https://poser.pugx.org/yassi/nova-nested-form/v/stable)](https://packagist.org/packages/yassi/nova-nested-form)
-[![Total Downloads](https://poser.pugx.org/yassi/nova-nested-form/downloads)](https://packagist.org/packages/yassi/nova-nested-form)
-[![Latest Unstable Version](https://poser.pugx.org/yassi/nova-nested-form/v/unstable)](https://packagist.org/packages/yassi/nova-nested-form)
-[![License](https://poser.pugx.org/yassi/nova-nested-form/license)](https://packagist.org/packages/yassi/nova-nested-form)
-[![Monthly Downloads](https://poser.pugx.org/yassi/nova-nested-form/d/monthly)](https://packagist.org/packages/yassi/nova-nested-form)
-[![Daily Downloads](https://poser.pugx.org/yassi/nova-nested-form/d/daily)](https://packagist.org/packages/yassi/nova-nested-form)
+[![Latest Stable Version](https://poser.pugx.org/wdgt/nova-nested-form/v/stable)](https://packagist.org/packages/wdgt/nova-nested-form)
+[![Total Downloads](https://poser.pugx.org/wdgt/nova-nested-form/downloads)](https://packagist.org/packages/wdgt/nova-nested-form)
+[![Latest Unstable Version](https://poser.pugx.org/wdgt/nova-nested-form/v/unstable)](https://packagist.org/packages/wdgt/nova-nested-form)
+[![License](https://poser.pugx.org/wdgt/nova-nested-form/license)](https://packagist.org/packages/wdgt/nova-nested-form)
+[![Monthly Downloads](https://poser.pugx.org/wdgt/nova-nested-form/d/monthly)](https://packagist.org/packages/wdgt/nova-nested-form)
+[![Daily Downloads](https://poser.pugx.org/wdgt/nova-nested-form/d/daily)](https://packagist.org/packages/wdgt/nova-nested-form)
 
 # Nova Nested Form
 
@@ -56,7 +56,7 @@ Also, translations are now available in your nested field! You just need to add 
 # Installation
 
 ```bash
-composer require yassi/nova-nested-form
+composer require wdgt/nova-nested-form
 ```
 
 # Attach a new relationship form to a resource
@@ -72,7 +72,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\Password;
 // Add use statement here.
-use Yassi\NestedForm\NestedForm;
+use Wdgt\NestedForm\NestedForm;
 
 class User extends Resource
 {

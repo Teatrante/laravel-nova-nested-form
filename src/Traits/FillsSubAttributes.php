@@ -1,6 +1,6 @@
 <?php
 
-namespace Yassi\NestedForm\Traits;
+namespace Wdgt\NestedForm\Traits;
 
 use Exception;
 use Illuminate\Database\Eloquent\Collection;
@@ -18,8 +18,8 @@ use Laravel\Nova\Http\Requests\UpdateResourceRequest;
 use Laravel\Nova\Nova;
 use Symfony\Component\HttpFoundation\FileBag;
 use Symfony\Component\HttpFoundation\ParameterBag;
-use Yassi\NestedForm\Exceptions\NestedValidationException;
-use Yassi\NestedForm\NestedForm;
+use Wdgt\NestedForm\Exceptions\NestedValidationException;
+use Wdgt\NestedForm\NestedForm;
 
 trait FillsSubAttributes
 {

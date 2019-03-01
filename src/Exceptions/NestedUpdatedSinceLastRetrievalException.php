@@ -1,6 +1,6 @@
 <?php
 
-namespace Yassi\NestedForm\Exceptions;
+namespace Wdgt\NestedForm\Exceptions;
 
 use Exception;
 

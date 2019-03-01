@@ -18,13 +18,13 @@
     }],
     "autoload": {
         "psr-4": {
-            "Yassi\\NestedForm\\": "src/"
+            "Wdgt\\NestedForm\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Yassi\\NestedForm\\FieldServiceProvider"
+                "Wdgt\\NestedForm\\FieldServiceProvider"
             ]
         }
     },

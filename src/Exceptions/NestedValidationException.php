@@ -1,10 +1,10 @@
 <?php
 
-namespace Yassi\NestedForm\Exceptions;
+namespace Wdgt\NestedForm\Exceptions;
 
 use Exception;
 use Illuminate\Validation\ValidationException;
-use Yassi\NestedForm\NestedForm;
+use Wdgt\NestedForm\NestedForm;
 
 class NestedValidationException extends Exception
 {
