@@ -10,3 +10,4 @@ mix.setPublicPath('dist')
             },
         },
     })
+

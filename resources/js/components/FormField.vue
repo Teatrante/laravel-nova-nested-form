@@ -12,13 +12,14 @@
     <template v-if="field.children.length > 0">
       <!-- ACTUAL FIELDS -->
       <nested-form-field v-for="(child, index) in field.children"
-                         :key="`${field.attribute}-${index}`"
-                         :index="index"
-                         :field="field"
-                         :child="child"
-                         :errors="errors"
-                         @file-deleted="$emit('file-deleted')" />
+                        :key="`${field.attribute}-${index}`"
+                        :index="index"
+                        :field="field"
+                        :child="child"
+                        :errors="errors"
+                        @file-deleted="$emit('file-deleted')" />
       <!-- ACTUAL FIELDS -->
+      
     </template>
 
     <template v-else>
@@ -70,7 +71,7 @@ export default {
      * This adds a resource to the children
      */
     add() {
-      this.field.children.push(this.replaceIndexesInSchema(this.field))
+        this.field.children.push(this.replaceIndexesInSchema(this.field))
 
     },
 
@@ -89,7 +90,6 @@ export default {
      */
     replaceIndexesInSchema(field) {
       const schema = JSON.parse(JSON.stringify(field.schema))
-
 
       schema.fields.forEach(field => {
         if (field.schema) {

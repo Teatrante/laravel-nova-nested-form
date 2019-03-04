@@ -1,6 +1,6 @@
 <?php
 
-namespace Yassi\NestedForm;
+namespace Wdgt\NestedForm;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -10,17 +10,18 @@ use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\ResourceRelationshipGuesser;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Nova;
-use Yassi\NestedForm\Traits\CanBeCollapsed;
-use Yassi\NestedForm\Traits\FillsSubAttributes;
-use Yassi\NestedForm\Traits\HasChildren;
-use Yassi\NestedForm\Traits\HasHeading;
-use Yassi\NestedForm\Traits\HasLimits;
-use Yassi\NestedForm\Traits\HasSchema;
-use Yassi\NestedForm\Traits\HasSubfields;
+use Wdgt\NestedForm\Traits\CanBeCollapsed;
+use Wdgt\NestedForm\Traits\FillsSubAttributes;
+use Wdgt\NestedForm\Traits\HasChildren;
+use Wdgt\NestedForm\Traits\HasHeading;
+use Wdgt\NestedForm\Traits\HasLimits;
+use Wdgt\NestedForm\Traits\HasSchema;
+use Wdgt\NestedForm\Traits\HasSubfields;
 
 class NestedForm extends Field
 {
     use HasChildren, HasSchema, HasSubfields, HasLimits, HasHeading, CanBeCollapsed, FillsSubAttributes;
+
 
     /**
      * Constants for placeholders.

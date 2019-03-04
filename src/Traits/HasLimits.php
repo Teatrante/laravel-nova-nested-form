@@ -1,6 +1,6 @@
 <?php
 
-namespace Yassi\NestedForm\Traits;
+namespace Wdgt\NestedForm\Traits;
 
 trait HasLimits
 {
